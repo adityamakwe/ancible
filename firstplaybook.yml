@@ -1,10 +1,12 @@
 --- 
-- hosts: all
-  tasks:
-  - name: i want to ping 
-    ping: 
+-  hosts: all
+   tasks:
+   - name: i want to ping 
+     ping:
 
-  - name: i want to install tree
-    apt: 
-     name: tree
-     state: present
+   - name: Install the package "apache2"
+   apt:
+    name: "apache2"
+    state: present 
+
+
