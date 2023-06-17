@@ -8,6 +8,10 @@
     apt:
      name: "apache2"
      state: present
+
+  - name: i want to start a webserver
+    service: "apache2"
+    state: present
   
   - name: i want to install git 
     apt:
